@@ -1,0 +1,151 @@
+.craftsmanship-slider {
+  padding-bottom: 60px;
+}
+
+.cocktail-card {
+  width: 100%;
+  cursor: pointer;
+}
+
+.cocktail-image-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 5.5;
+  overflow: hidden;
+}
+
+.cocktail-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s cubic-bezier(0.36, 1, 0.4, 1);
+  will-change: transform;
+}
+
+.cocktail-card:hover .cocktail-image {
+  transform: scale(1.04);
+}
+
+.cocktail-title {
+  margin-top: 18px;
+  color: var(--color-primary-blue);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.craftsmanship-slider .swiper-button-prev,
+.craftsmanship-slider .swiper-button-next {
+  color: rgba(190, 190, 190, 0.55);
+  transition: color 0.3s ease;
+}
+
+.craftsmanship-slider .swiper-button-prev:hover,
+.craftsmanship-slider .swiper-button-next:hover {
+  color: rgba(220, 220, 220, 0.9);
+}
+
+@media (max-width: 1536px) {
+  .craftsmanship-slider {
+    padding-bottom: 50px;
+  }
+
+  .cocktail-image-wrapper {
+    aspect-ratio: 4 / 5.2;
+  }
+
+  .cocktail-title {
+    font-size: 15px;
+  }
+}
+
+/* <= 1024px */
+@media (max-width: 1024px) {
+  .craftsmanship-slider {
+    padding-bottom: 40px;
+  }
+
+  .cocktail-image-wrapper {
+    aspect-ratio: 4 / 4.9;
+  }
+
+  .cocktail-title {
+    margin-top: 16px;
+    font-size: 15px;
+  }
+
+  .craftsmanship-slider .swiper-button-prev,
+  .craftsmanship-slider .swiper-button-next {
+    transform: scale(0.9);
+  }
+}
+
+/* <= 768px */
+@media (max-width: 768px) {
+  .craftsmanship-slider {
+    padding-bottom: 30px;
+  }
+
+  .cocktail-image-wrapper {
+    aspect-ratio: 4 / 4.5;
+  }
+
+  .cocktail-title {
+    margin-top: 14px;
+    font-size: 14px;
+  }
+
+  .craftsmanship-slider .swiper-button-prev,
+  .craftsmanship-slider .swiper-button-next {
+    transform: scale(0.85);
+  }
+}
+
+/* <= 640px */
+@media (max-width: 640px) {
+  .cocktail-image-wrapper {
+    aspect-ratio: 4 / 4.4;
+  }
+
+  .cocktail-title {
+    margin-top: 12px;
+    font-size: 13px;
+  }
+
+  .craftsmanship-slider .swiper-button-prev,
+  .craftsmanship-slider .swiper-button-next {
+    transform: scale(0.8);
+  }
+}
+
+/* <= 480px */
+@media (max-width: 480px) {
+  .craftsmanship-slider {
+    padding-bottom: 30px;
+  }
+
+  .cocktail-image-wrapper {
+    aspect-ratio: 4 / 4.3;
+  }
+
+  .cocktail-title {
+    font-size: 12px;
+  }
+
+  .craftsmanship-slider .swiper-button-prev,
+  .craftsmanship-slider .swiper-button-next {
+    transform: scale(0.75);
+  }
+}
+
+@media (max-width: 768px) {
+  .craftsmanship-slider .swiper-button-prev {
+    left: 8px;
+  }
+
+  .craftsmanship-slider .swiper-button-next {
+    right: 8px;
+  }
+}
